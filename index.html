@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="aset/icon/home.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web 1</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="aset/icon/home.png" alt="logo" class="img-logo">
+            <h1 class="title-logo">HAMM EZ</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hobby">Hobby</a></li>
+                <li><a href="mailto:ilhampolpro@gmail.com">Contac</a></li>
+            </ul>
+        </nav>
+        <button class="btn-cta" onclick="redirInstagram()">Follow Me</button>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <p class="title">HELLO, MOKHAMM ILHAM HERE!!</p>
+            <p class="deskripsi">No Pain, No gain</p>
+            <img src="aset/gambar/gw.jpg" alt="ILHAM photo" class="foto">
+        </div>
+    </div>
+    <div class="parallax">
+        <div class="tentang">
+            <p class="title">Nama Saya adalah Mokhammad Ilham Putra Wijaya</p>
+            <p class="deskripsi">Saya adalah manusia pada umumnya</p>
+            <div class="mt-10">
+                <button class="btn-cta" onclick="redirWhatsapp()">Button Click</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card" id="hobby">
+                <div class="card-item">
+                    <img src="aset/icon/java.png" alt="coffe" class="icon">
+                    <p class="card-title">Hobi Njagong</p>
+                    <p class="card-deskripsi">Njangong adalah  berkumpul, bercanda dan bercerita dengan teman</p>
+                </div>
+                <div class="card-item">
+                    <img src="aset/icon/clock.png" alt="time" class="icon">
+                    <p class="card-title"> Waktu Njagong</p>
+                    <p class="card-deskripsi">Waktu Njagong biasanya habis Isya sampai tengah malam saat ada waktu luang</p>
+                </div>
+                <div class="card-item">
+                    <img src="aset/icon/mail-inbox.png" alt="build" class="icon">
+                    <p class="card-title">Kegiatan Njagong</p>
+                    <p class="card-deskripsi">Kegiatannya adalah bermain game dan membahas permasalahan dan sejarah</p>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <footer>
+        <p class="title">&copy; Hamm Website 2023</p>
+    </footer>
+
+    <script>
+        function redirInstagram() {
+            window.location.href = "https://instagram.com/hamm_ez"
+        }
+
+        function redirWhatsapp() {
+            window.location.href = "https://wa.me/+6289990086587"
+        }
+    </script>
+</body>
+</html>

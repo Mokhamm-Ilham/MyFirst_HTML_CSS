@@ -1,0 +1,214 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-first: #90afc9;
+    --color-second: #336b87;
+    --color-third: #2a3132;
+    --color-fourth: #708393;
+}
+
+header {
+    background: var(--color-third);
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    gap: 5px;
+}
+
+.img-logo {
+    width: 35px;
+    height: 35px;
+    background: #eaeaea;
+    margin-left: 10px;
+}
+
+.title-logo {
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+
+.logo:hover {
+    color: var(--color-first);
+    transform: rotate(2deg);
+}
+
+nav ul{
+    display: flex;
+    padding: 20px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li a {
+    transition: all .5s ease 0s;
+    display: inline-block;
+}
+
+li a:hover {
+    color: var(--color-first);
+    transform: rotate(2deg);
+}
+
+a {
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+.btn-cta {
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 4px 10px;
+    background: var(--color-first);
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.deskripsi {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.foto {
+    width: 100%;
+    max-width: 400px;
+    max-height: auto;
+    padding: 8px;
+}
+
+.parallax {
+    background-image: url(aset/gambar/ai.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: var(--color-fourth);
+    color: #eaeaea;
+    padding: 20px;
+}
+
+.mt-10 {
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-item {
+    text-align: center;
+    width: 30%;
+    min-height: 200px;
+    max-height: 300px;
+    background: var(--color-second);
+    color: #eaeaea;
+    padding: 28px;  
+    box-shadow: 2px 4px 4px 1px rgb(255, 255, 255);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 2px;
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.card-deskripsi {
+    margin-top: 3px;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background: var(--color-third);
+    color: #eaeaea;
+}
+
+@media screen and (max-width: 500px) {
+    .parallax {
+        height: auto;
+    }
+    .card {
+        flex-direction: column;
+        gap: 0;
+    }
+    .card-item {
+        width: 100%;
+        opacity: .8;
+    }
+    .container {
+        padding: 10px;
+    }
+    .intro {
+        margin-top: 20px;
+    }
+    .foto {
+        padding: 0;
+    }
+    nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: var(--color-third);
+        z-index: 9;
+    }
+    footer {
+        margin-bottom: 70px;
+    }
+}
